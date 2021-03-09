@@ -1,0 +1,35 @@
+{
+  "name": "TypescriptCrawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon node ./build/index.js",
+    "dev": "tsc && concurrently npm:dev:*"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/superagent": "^4.1.10",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@types/cookie-session": "^2.0.42",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.5",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "superagent": "^6.1.0"
+  }
+}
